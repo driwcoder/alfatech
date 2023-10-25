@@ -3,7 +3,7 @@ import Cards from '@/components/Cards'
 
 const Servicos = () => {
   return (
-    <section >
+    <section id='Informacoes'>
       <div className={styles.servicosContent}>
         <h2>Existem diversos serviços de hospedagem de sites. Porque você deve nos escolher?</h2>
         <div className={styles.cards}>

@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 const Oferta = (props: any) => {
   return (
-    <section className={props.ofertaEscuro}>
-      <div className={`${styles.ofertaContent} ${props.ofertaContentEscuro} `}>
+    <section className={props.ofertaCor}>
+      <div className={`${styles.ofertaContent} ${props.ofertaContentCor} `}>
         <div className={props.textDiv}>
           <h2>{props.title}</h2>
           <p>{props.text}</p>

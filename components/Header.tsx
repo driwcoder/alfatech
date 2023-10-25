@@ -15,16 +15,16 @@ const Header = () => {
           </div>
         </div>
         <nav className={styles.navigationBar}>
-          <Link href='#Informacoes' id='Informacoes' className={styles.navLinks}>
+          <Link href='#Informacoes' className={styles.navLinks}>
             Informações
           </Link>
-          <Link href='#Planos' id='Planos' className={styles.navLinks}>
+          <Link href='#Planos' className={styles.navLinks}>
             Planos
           </Link>
-          <Link href='/precos' id='Precos' className={styles.navLinks}>
+          <Link href='/precos' className={styles.navLinks}>
             Preços
           </Link>
-          <Link href='#Contato' id='Contato' className={styles.navLinks}>
+          <Link href='#Contato' className={styles.navLinks}>
             Contato
           </Link>
         </nav>
