@@ -19,12 +19,15 @@
 }
 
 /* ! Header */
+.headerEscuro {
+  background-color: rgb(47, 134, 214);
+}
 
 .headerContent {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 35px 0;
 }
 .logo {
   display: flex;
@@ -34,6 +37,9 @@
 
 .logoText span {
   color: rgb(47, 134, 214);
+}
+.logoTextEscuro span {
+  color: rgb(255, 255, 255);
 }
 .navigationBar {
   display: flex;
@@ -46,6 +52,14 @@
   font-weight: bold;
 
   color: rgb(26, 26, 26);
+}
+.navLinksEscuro {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-weight: bold;
+
+  color: rgb(255, 255, 255);
 }
 
 /* !Banner */

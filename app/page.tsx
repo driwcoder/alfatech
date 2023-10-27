@@ -10,7 +10,15 @@ import Footer from '@/components/Footer'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Header />
+      <Header
+        header={`${styles.header}`}
+        headerContent={`${styles.headerContent}`}
+        logo={`${styles.logo}`}
+        logoText={`${styles.logoText}`}
+        navigationBar={`${styles.navigationBar}`}
+        navLinks={`${styles.navLinks}`}
+        imagemLogo='/logo-icone.png'
+      />
       <Banner1 />
       <Oferta
         title='Hospede o seu site por apenas R$29 por mês'

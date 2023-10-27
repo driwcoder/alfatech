@@ -3,28 +3,28 @@ import Link from 'next/link'
 import React from 'react'
 import styles from 'app/page.module.css'
 
-const Header = () => {
+const Header = (props: any) => {
   return (
-    <header className={styles.header}>
-      <div className={styles.headerContent}>
-        <div className={styles.logo}>
-          <Image src='/logo-icone.png' width='70' height='70' alt='logo' />
-          <div className={styles.logoText}>
+    <header className={props.header}>
+      <div className={props.headerContent}>
+        <div className={props.logo}>
+          <Image src={props.imagemLogo} width='70' height='70' alt='logo' />
+          <div className={props.logoText}>
             <h1>AlfaTech</h1>
             <span>Soluções em hospedagem</span>
           </div>
         </div>
-        <nav className={styles.navigationBar}>
-          <Link href='#Informacoes' className={styles.navLinks}>
+        <nav className={props.navigationBar}>
+          <Link href='#Informacoes' className={props.navLinks}>
             Informações
           </Link>
-          <Link href='#Planos' className={styles.navLinks}>
+          <Link href='#Planos' className={props.navLinks}>
             Planos
           </Link>
-          <Link href='/precos' className={styles.navLinks}>
+          <Link href='/precos' className={props.navLinks}>
             Preços
           </Link>
-          <Link href='#Contato' className={styles.navLinks}>
+          <Link href='#Contato' className={props.navLinks}>
             Contato
           </Link>
         </nav>
