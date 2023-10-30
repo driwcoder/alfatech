@@ -13,7 +13,8 @@
 .servicosContent,
 .tabelaContent,
 .contatosContent,
-.footerContent {
+.footerContent,
+.tabela2Content {
   margin: 0 auto;
   max-width: 1024px;
 }
@@ -156,7 +157,9 @@
   width: 20px;
   height: auto;
 }
-
+.linkBotao {
+  text-decoration: none;
+}
 /* !Serviços */
 
 .servicosContent {
@@ -288,4 +291,29 @@
 }
 .footerContent .link {
   text-decoration: none;
+}
+
+/* !Tabela2 */
+
+
+.tabela2Content table {
+  width: 100%;
+}
+.tabela2Content table tbody {
+  display: flex;
+}
+.tabela2Content table tbody td {
+  padding: 20px 30px;
+  text-align: center;
+  width: calc(100%/5);
+  text-align: center;
+  background-color: rgb(241, 243, 247);
+}
+
+.tabela2Content table tbody td tr span {
+  font-size: 15px;
+  color: rgb(149, 138, 132); 
+}
+.tabela2Content table tbody td tr h3 {
+  font-size: 40px;
 }
