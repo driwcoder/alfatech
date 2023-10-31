@@ -36,12 +36,13 @@
   gap: 15px;
 }
 
-.logoText span {
+.logoTextSpanClaro  {
   color: rgb(47, 134, 214);
 }
-.logoTextEscuro span {
+.logoTextSpanEscuro {
   color: rgb(255, 255, 255);
 }
+
 .navigationBar {
   display: flex;
   gap: 10px;
@@ -258,6 +259,10 @@
 .contatos {
   margin: 50px 0;
 }
+.contatosEscuro {
+  background-color: rgb(47, 134, 214);
+  padding: 50px;
+}
 
 .contatosContent {
   display: flex;
@@ -268,6 +273,10 @@
 .contatosContent .logo {
   margin-bottom: 50px;
 }
+.contatosContent .logoText {
+  text-align: start;
+}
+
 .contatosContent p {
   line-height: 40px;
 }
@@ -295,25 +304,55 @@
 
 /* !Tabela2 */
 
-
 .tabela2Content table {
   width: 100%;
+  border-collapse: collapse;
 }
-.tabela2Content table tbody {
-  display: flex;
-}
+
 .tabela2Content table tbody td {
+  width: calc(100% / 5);
+  text-align: center;
+}
+.tabela2Content table thead td {
+  text-align: center;
   padding: 20px 30px;
-  text-align: center;
-  width: calc(100%/5);
-  text-align: center;
   background-color: rgb(241, 243, 247);
 }
 
+.tabela2Content table tbody td tr:nth-of-type(1) {
+  width: calc(100%);
+}
+.tabela2Content table tbody td:nth-of-type(1) {
+  background-color: rgb(241, 243, 247);
+  text-wrap: nowrap;
+}
+.tabela2Content table thead td:nth-of-type(1) {
+  background-color: rgb(255, 255, 255);
+  text-wrap: nowrap;
+}
+.tabela2Content table tbody td tr {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
 .tabela2Content table tbody td tr span {
   font-size: 15px;
-  color: rgb(149, 138, 132); 
+  color: rgb(149, 138, 132);
 }
 .tabela2Content table tbody td tr h3 {
   font-size: 40px;
+}
+.tabela2Content table tbody td tr {
+  border: 1px solid rgb(241, 243, 247);
+}
+.tabela2Content table tbody td:nth-of-type(1) tr,
+.tabela2Content table thead td {
+  border: 1px solid rgb(255, 255, 255);
+}
+.tabela2Content table tbody td tr {
+  height: 55px;
+  text-wrap: nowrap;
+}
+.tabela2 {
+  margin: 100px 0;
 }

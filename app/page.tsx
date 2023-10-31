@@ -15,9 +15,17 @@ export default function Home() {
         headerContent={`${styles.headerContent}`}
         logo={`${styles.logo}`}
         logoText={`${styles.logoText}`}
+        
+        
         navigationBar={`${styles.navigationBar}`}
         navLinks={`${styles.navLinks}`}
         imagemLogo='/logo-icone.png'
+        logoTextSpan={`${styles.logoTextSpanClaro}`}
+
+        linkInformacoes='/#Informacoes'
+        linkPlanos='/#Planos'
+        linkPrecos='/precos'
+        linkContato='/#Contato'
       />
       <Banner1 />
       <Oferta
@@ -35,7 +43,11 @@ export default function Home() {
         ofertaContentCor={`${styles.ofertaContentClaro}`}
         botaoOferta={styles.botaoClaro}
       />
-      <Contato />
+      <Contato
+      imagemLogo='/logo-icone.png'
+      contatos={`${styles.contatos}`}
+      logoTextSpan={`${styles.logoTextSpanClaro}`}
+      />
       <Footer />
     </main>
   )
